@@ -78,9 +78,8 @@ if(isset($_POST["To_Excel"])){
                     <TR>
                       <TH>ID</TH>
                       <TH>Name</TH>
-                      <TH>Serial Number</TH>
                       <TH>Card UID</TH>
-                      <TH>Device ID</TH>
+                      <TH>Department</TH>
                       <TH></TH>
                       <TH>Date log</TH>
                       <TH>Time In</TH>
@@ -91,9 +90,7 @@ if(isset($_POST["To_Excel"])){
                         <TR> 
                             <TD> '.$row['id'].'</TD>
                             <TD> '.$row['username'].'</TD>
-                            <TD> '.$row['serialnumber'].'</TD>
                             <TD> '.$row['card_uid'].'</TD>
-                            <TD> '.$row['device_uid'].'</TD>
                             <TD> '.$row['device_dep'].'</TD>
                             <TD> '.$row['checkindate'].'</TD>
                             <TD> '.$row['timein'].'</TD>

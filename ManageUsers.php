@@ -5,7 +5,6 @@ if (!isset($_SESSION['Admin-name'])) {
 }
 ?>
 <!DOCTYPE html>
-<html>
 <head>
 	<title>Manage Users</title>
   	<meta charset="utf-8">
@@ -15,7 +14,7 @@ if (!isset($_SESSION['Admin-name'])) {
 
     <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.js"
-	        integrity="sha1256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+	        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
 	        crossorigin="anonymous">
 	</script>
     <script type="text/javascript" src="js/bootbox.min.js"></script>
@@ -55,32 +54,11 @@ if (!isset($_SESSION['Admin-name'])) {
 				<legend><span class="number">1</span> Student Info</legend>
 				<input type="hidden" name="user_id" id="user_id">
 				<input type="text" name="name" id="name" placeholder="User Name...">
-				<input type="text" name="number" id="number" placeholder="Serial Number...">
-				<input type="text" name="text" id="text" placeholder="Class...">
+				<input type="text" name="dept" id="dept" placeholder="Department...">
+				<input type="text" name="class" id="class" placeholder="Class...">				
+				<input type="text" name="rooms" id="rooms" placeholder="Rooms...">
 			</fieldset>
 			<fieldset>
-			<legend><span class="number">2</span> Additional Info</legend>
-			<label>
-				<label for="Device"><b>JABATAN:</b></label>
-                    <select class="dev_sel" name="dev_sel" id="dev_sel" style="color: #000;">
-                      <option value="0">SEMUA JABATAN</option>
-                      <?php
-                        require'connectDB.php';
-                        $sql = "SELECT * FROM devices ORDER BY device_name ASC";
-                        $result = mysqli_stmt_init($conn);
-                        if (!mysqli_stmt_prepare($result, $sql)) {
-                            echo '<p class="error">SQL Error</p>';
-                        } 
-                        else{
-                            mysqli_stmt_execute($result);
-                            $resultl = mysqli_stmt_get_result($result);
-                            while ($row = mysqli_fetch_assoc($resultl)){
-                      ?>
-                              <option value="<?php echo $row['device_uid'];?>"><?php echo $row['device_dep']; ?></option>
-                      <?php
-                            }
-                        }
-                      ?>
                     </select>
 				<input type="radio" name="gender" class="gender" value="Female">Female
 	          	<input type="radio" name="gender" class="gender" value="Male" checked="checked">Male

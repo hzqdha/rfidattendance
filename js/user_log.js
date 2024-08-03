@@ -5,8 +5,8 @@ $(document).ready(function(){
     var date_sel_start = $('#date_sel_start').val();
     var date_sel_end = $('#date_sel_end').val();
     var time_sel = $(".time_sel:checked").val();
-    var time_sel_start = $('#time_sel_start').val();
     var time_sel_end = $('#time_sel_end').val();
+    var time_sel_start = $('#time_sel_start').val();
     var card_sel = $('#card_sel option:selected').val();
     var dev_uid = $('#dev_sel option:selected').val();
     
@@ -18,8 +18,8 @@ $(document).ready(function(){
         'date_sel_start': date_sel_start,
         'date_sel_end': date_sel_end,
         'time_sel': time_sel,
-        'time_sel_start': time_sel_start,
         'time_sel_end': time_sel_end,
+        'time_sel_start': time_sel_start,
         'card_sel': card_sel,
         'dev_uid': dev_uid,
       },
@@ -41,8 +41,8 @@ $(document).ready(function(){
             'date_sel_start': date_sel_start,
             'date_sel_end': date_sel_end,
             'time_sel': time_sel,
-            'time_sel_start': time_sel_start,
             'time_sel_end': time_sel_end,
+            'time_sel_start': time_sel_start,
             'dev_uid': dev_uid,
             'card_sel': card_sel,
             'select_date': 0,

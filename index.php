@@ -33,11 +33,12 @@ if (!isset($_SESSION['Admin-name'])) {
       <thead class="table-primary">
         <tr>
           <th>ID | Name</th>
-          <th>Serial Number</th>
           <th>Gender</th>
           <th>Card UID</th>
           <th>Date</th>
+          <th>Department</th>
           <th>Class</th>
+          <th>Rooms</th>
         </tr>
       </thead>
       <tbody class="table-secondary">
@@ -58,11 +59,12 @@ if (!isset($_SESSION['Admin-name'])) {
           ?>
                       <TR>
                       <TD><?php echo $row['id']; echo" | "; echo $row['username'];?></TD>
-                      <TD><?php echo $row['serialnumber'];?></TD>
                       <TD><?php echo $row['gender'];?></TD>
                       <TD><?php echo $row['card_uid'];?></TD>
                       <TD><?php echo $row['user_date'];?></TD>
                       <TD><?php echo $row['device_dep'];?></TD>
+                      <TD><?php echo $row['class'];?></TD>
+                      <TD><?php echo $row['no_room'];?></TD>
                       </TR>
         <?php
                 }   

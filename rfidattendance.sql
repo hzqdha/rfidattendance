@@ -65,6 +65,8 @@ CREATE TABLE `users` (
   `email` varchar(50) NOT NULL DEFAULT 'None',
   `card_uid` varchar(30) NOT NULL,
   `card_select` tinyint(1) NOT NULL DEFAULT '0',
+  `class` varchar(50) NOT NULL DEFAULT 'None',
+  `no_room` varchar(50) NOT NULL DEFAULT 'None',
   `user_date` date NOT NULL,
   `device_uid` varchar(20) NOT NULL DEFAULT '0',
   `device_dep` varchar(20) NOT NULL DEFAULT '0',

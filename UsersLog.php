@@ -15,7 +15,7 @@ if (!isset($_SESSION['Admin-name'])) {
 
     <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.js"
-            integrity="sha1256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
             crossorigin="anonymous">
     </script>   
     <script type="text/javascript" src="js/bootbox.min.js"></script>
@@ -55,7 +55,7 @@ if (!isset($_SESSION['Admin-name'])) {
 </head>
 <body>
 <?php include'header.php'; ?> 
-<section class="container py-lg-5">>
+<section class="container py-lg-5">
   <!--User table-->
     <h1 class="slideInDown animated">Here are the Users daily logs</h1>
     <div class="form-style-5">
