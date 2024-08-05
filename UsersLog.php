@@ -136,7 +136,7 @@ if (!isset($_SESSION['Admin-name'])) {
                       <option value="0">All Departments</option>
                       <?php
                         require'connectDB.php';
-                        $sql = "SELECT * FROM devices ORDER BY device_dep ASC";
+                        $sql = "SELECT * FROM users ORDER BY device_dep ASC";
                         $result = mysqli_stmt_init($conn);
                         if (!mysqli_stmt_prepare($result, $sql)) {
                             echo '<p class="error">SQL Error</p>';
